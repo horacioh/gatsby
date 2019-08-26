@@ -11,8 +11,8 @@ disableTableOfContents: true
 
 0.  [Configura tu entorno de desarrollo](/tutorial/part-zero/): Te presentaremos las tecnologías bases que forman Gatsby, y te guiamos en la configuración de tu entorno de desarrollo.
 1.  [Conozcamos las piezas base de Gatsby](/tutorial/part-one/): Inicio de nuevos proyectos, desarrollo y despliegue de sitios web.
-2.  [Introducción a CSS en Gatsby](/tutorial/part-two/): Exploraremos librerias como Typography.js y CSS Modules.
-3.  [Crear Layouts anidados en Gatsby](/tutorial/part-three/): Layouts son secciones de nuestro sitio web que son rehusados en diferentes páginas como "headers" y "footers".
+1.  [Introducción a CSS en Gatsby](/tutorial/part-two/): Exploraremos librerias como Typography.js y CSS Modules.
+1.  [Crear Layouts anidados en Gatsby](/tutorial/part-three/): Layouts son secciones de nuestro sitio web que son rehusados en diferentes páginas como "headers" y "footers".
 
 ## Tutoriales Nivel Intermedio
 
