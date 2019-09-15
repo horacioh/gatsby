@@ -26,7 +26,7 @@ En éstos tutoriales de nivel intermedio, aprenderás cómo extraer datos de cas
 
 ## Tutoriales sobre "Temas"
 
-Gatsby Temas abstrae toda la configuración por defecto (funcionalidades compartidas, fuentes de datos, diseño) fuera de tu sitio web a un paquete instalable.
+Los temas de Gatsby abstraen toda la configuración por defecto (funcionalidades compartidas, fuentes de datos, diseño) fuera de tu sitio web a un paquete instalable.
 
 Ésto significa que la configuración y la funcionalidad no estarán escritas directamente en tu proyecto, sino versionado, isolado e instalado como una dependencia. Tu puedes actualizar un tema, componer temas e incluso cambiar un tema compatible con otro.
 
