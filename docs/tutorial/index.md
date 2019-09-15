@@ -19,18 +19,18 @@ disableTableOfContents: true
 En éstos tutoriales de nivel intermedio, aprenderás cómo extraer datos de casi cualquier lugar en tu sitio Gatsby con GraphQL
 
 4.  [Consulta de datos en tu blog](/tutorial/part-four/): Crea un blog y usa una GraphQL query para extraer el título del sitio web en el "header" de nuestro blog.
-5.  ["Source plugins" y renderizar la data extraida](/tutorial/part-five/): Usa un "source plugin" para extraer datos de tus post en Markdown a tu sitio web y crea una pagina "index" con la lista de tus posts.
+5.  ["Source plugins" y renderizar la data extraida](/tutorial/part-five/): Usa un "source plugin" para extraer datos de tus post en Markdown a tu sitio web y crea una página "index" con la lista de tus posts.
 6.  ["Transformer plugins"](/tutorial/part-six/): Usa un "transformer plugin" para transformar tus posts de Markdown a una forma que tu blog pueda renderizar.
-7.  [Crea páginas programáticamente desde data](/tutorial/part-seven/): Aprende cómo create páginas programáticamente para tus blog posts.
+7.  [Crea páginas programáticamente desde data](/tutorial/part-seven/): Aprende cómo crear páginas programáticamente para tus blog posts.
 8.  [Prepara si sitio web para publicarlo](/tutorial/part-eight/): Aprende como auditar el performance de tu sitio web y buenas prácticas de accesibilidad, SEO y más.
 
-## Tutoriales sobre "Themes"
+## Tutoriales sobre temas
 
-Gatsby Themes abstrae toda la configuración por defecto (funcionalidades compartidas, fuentes de datos, diseño) fuera de tu sitio web a un paquete instalable.
+Los temas de Gatsby abstraen toda la configuración por defecto (funcionalidades compartidas, fuentes de datos, diseño) fuera de tu sitio web a un paquete instalable.
 
-Ésto significa que la configuración y la funcionalidad no estarán escritas directamente en tu proyecto, sino versionado, isolado y instalado como una dependencia. Tu puedes actualizar un theme, componer themes e incluso cambiar un tema compatible con otro.
+Ésto significa que la configuración y la funcionalidad no estarán escritas directamente en tu proyecto, sino versionado, isolado e instalado como una dependencia. Tu puedes actualizar un tema, componer temas e incluso cambiar un tema compatible con otro.
 
-Conoce más sobre cómo usar y crear themes en [éste tutorial](/tutorial/theme-tutorials/).
+Conoce más sobre cómo usar y crear temas en [éste tutorial](/tutorial/theme-tutorials/).
 
 ## Tutoriales adicionales
 
