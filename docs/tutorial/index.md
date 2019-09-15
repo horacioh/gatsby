@@ -24,7 +24,7 @@ En éstos tutoriales de nivel intermedio, aprenderás cómo extraer datos de cas
 7.  [Crea páginas programáticamente desde data](/tutorial/part-seven/): Aprende cómo crear páginas programáticamente para tus blog posts.
 8.  [Prepara si sitio web para publicarlo](/tutorial/part-eight/): Aprende como auditar el performance de tu sitio web y buenas prácticas de accesibilidad, SEO y más.
 
-## Tutoriales sobre "Temas"
+## Tutoriales sobre temas
 
 Los temas de Gatsby abstraen toda la configuración por defecto (funcionalidades compartidas, fuentes de datos, diseño) fuera de tu sitio web a un paquete instalable.
 
