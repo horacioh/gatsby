@@ -1,20 +1,20 @@
 ---
-title: Source plugins
+title: Plugins de fuentes de datos
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-> This tutorial is part of a series about Gatsby’s data layer. Make sure you’ve gone through [part 4](/tutorial/part-four/) before continuing here.
+> Este tutorial es parte de una serie sobre la capa de datos de Gatsby. Asegúrate de haber terminado antes la [parte 4](/tutorial/part-four/) antes de continuar aquí.
 
-## What's in this tutorial?
+## ¿Qué abarca este tutorial?
 
-In this tutorial, you'll be learning about how to pull data into your Gatsby site using GraphQL and source plugins. Before you learn about these plugins, however, you'll want to know how to use something called GraphiQL, a tool that helps you structure your queries correctly.
+En este tutorial aprenderás como jalar datos a tu sitio de Gatsby usando GraphQL y plugins de fuentes de datos. Sin embargo, antes de aprender acerca de estos plugins, será bueno saber cómo usar algo llamado GraphiQL, una herramienta que te ayuda a estructurar tus consultas de manera correcta.
 
-## Introducing GraphiQL
+## Presentando GraphiQL
 
-GraphiQL is the GraphQL integrated development environment (IDE). It's a powerful (and all-around awesome) tool you'll use often while building Gatsby websites.
+GraphiQL es el entorno de desarrollo integrado para GraphQL. Es una herramienta poderosa (y asombrosa) que usarás a menudo al crear sitios web de Gatsby.
 
-You can access it when your site's development server is running—normally at
+Puedes usarla cuando tu sitio de desarrollo este corriendo de manera normal en 
 <http://localhost:8000/___graphql>.
 
 <video controls="controls" autoplay="true" loop="true">
@@ -22,18 +22,18 @@ You can access it when your site's development server is running—normally at
   <p>Your browser does not support the video element.</p>
 </video>
 
-Poke around the built-in `Site` "type" and see what fields are available on it -- including the `siteMetadata` object you queried earlier. Try opening GraphiQL and play with your data! Press <kbd>Ctrl + Space</kbd> (or use <kbd>Shift + Space</kbd> as an alternate keyboard shortcut) to bring up the autocomplete window and <kbd>Ctrl + Enter</kbd> to run the GraphQL query. You'll be using GraphiQL a lot more through the remainder of the tutorial.
+Investiga con `Site` y ve que campos están disponibles dentro, incluyendo el `siteMetadata` que consultaste antes. `Site` es un "tipo" de dato incorporado en Gatsby. ¡Intenta abriendo GraphiQL y juega con tus datos! Presiona <kbd> Ctrl + Space </kbd> (o usa <kbd> Shift + Space </kbd> como un shortcut alternativo) para abrir la ventana de autocompletar y <kbd> Ctrl + Enter </kbd> para ejecutar el Consulta GraphQL. Utilizaráz GraphiQL mucho más durante el resto del tutorial.
 
-## Using the GraphiQL Explorer
+## Usando el explorador de GraphiQL
 
-The GraphiQL Explorer enables you to interactively construct full queries by clicking through available fields and inputs without the repetitive process of typing these queries out by hand.
+El explorador de GraphiQL te permite construir consultas de manera interactiva, haciendo click en los campos y entradas disponibles, evitando el repetitivo proceso de escribir estas consultas mano.
 
 <EggheadEmbed
   lessonLink="https://egghead.io/lessons/gatsby-build-a-graphql-query-using-gatsby-s-graphiql-explorer"
   lessonTitle="Build a GraphQL Query using Gatsby’s GraphiQL Explorer"
 />
 
-## Source plugins
+## Plugins de fuentes de datos
 
 Data in Gatsby sites can come from anywhere: APIs, databases, CMSs, local files, etc.
 
