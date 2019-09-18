@@ -160,7 +160,7 @@ export default ({ children }) => (
 )
 ```
 
-Notaras que importamos un archivo llamado `container.module.css` que es un módulo css. Creemos ese archivo ahora.
+Notarás que importamos un archivo llamado `container.module.css` que es un módulo css. Creemos ese archivo ahora.
 
 2. En el mismo directorio (`src/components`), crea un archivo `container.module.css` y copia/pega lo siguiente:
 
