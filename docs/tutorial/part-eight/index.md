@@ -162,7 +162,7 @@ Es todo lo que necesitas para iniciar con "service workers" en Gatsby.
 
 Agregar metadatos a las páginas (como un título o descripción) es clave para ayudar aa motores de búsqueda como Google a entender tu contenido y decidir cuando mostrarte en sus resultados de búsqueda.
 
-[React Helmet](https://github.com/nfl/react-helmet) es un paquete que provee a React componentes de interfaz para ti, para administrar tu [documento cabecera](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
+[React Helmet](https://github.com/nfl/react-helmet) es una biblioteca que provee una interfaz de componentes React para que administres la [cabecera de tus documentos HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
 
 El plugin [gatsby-plugin-react-helmet](/packages/gatsby-plugin-react-helmet/) soporta renderizado en el servidor de toda la información agregada con React Helmet. Usando el plugin, los atributos agregados a React Helmet serán agregados a las páginas HTML que Gatsby compile.
 
