@@ -8,13 +8,13 @@ Wow! ¡Haz recorrido un largo camino! Haz aprendido a:
 
 - crear nuevos sitios web con Gatsby
 - crear páginas y componentes
-- darle estilo a componentes
+- estilizar componentes
 - agregar plugins a un sitio web
 - agregar y transformar datos
 - usar GraphQL para hacer consultas de datos para tus páginas web
 - crear páginas web programáticamente utilizando tus datos
 
-En esta sección final, daremos algunos pasos comunes para preparar un sitio web y montarlo en línea, utilizando una poderosa herramienta que diagnostica sitios web llamada [Lighthouse](https://developers.google.com/web/tools/lighthouse/). A lo largo del camino introduciremos algunos plugins que comúnmente utilizarás en tus sitios web Gatsby.
+En esta sección final, te guiaremos en algunos pasos básicos para preparar y publicar tu página web, utilizando una potente herramienta de diagnóstico web llamada [Lighthouse](https://developers.google.com/web/tools/lighthouse/). A lo largo del camino introduciremos algunos plugins que comúnmente utilizarás en tus sitios web Gatsby.
 
 ## Auditoría con Lighthouse
 
@@ -22,7 +22,7 @@ Citando del [sitio web Lighthouse](https://developers.google.com/web/tools/light
 
 > Lighthouse es una herramienta automatizada de código abierto para aumentar la calidad de las páginas web. Puedes ejecutarla para que diagnostique cualquier pagina web, publica o que requiera autenticación. Audita el desempeño, accesibilidad, aplicación web progresiva (PWAs siglas en ingles), y más.
 
-Lighthouse viene incluido en Chrome DevTools. Ejecutar sus auditorías -- y después abordando los errores que encuentra e implementando las mejoras que sugiere -- es una manera estupenda de preparar tu sitio web para ponerlo en línea. Su ayuda te da la confianza de que tu sitio web es lo mas rápido y accesible posible.
+Lighthouse viene incluido en Chrome DevTools. Ejecutando sus auditorías -- y después abordando los errores que encuentra e implementando las mejoras que sugiere -- es una manera estupenda de preparar tu sitio web para ponerlo en línea. Su ayuda te da la confianza de que tu sitio web es lo mas rápido y accesible posible.
 
 ¡Probémoslo!
 
@@ -52,7 +52,7 @@ Ahora ejecutarás tus primeras pruebas con Lighthouse.
 
 1.  Si aun no lo haz hecho, abre tu sitio web en Chrome en modo incógnito, para que las extensiones no interfieran con las pruebas. Después, abre la Chrome DevTools.
 
-2.  Da clic en la pestaña "Audits" donde mirarás una pantalla como esta:
+2.  Haz clic en la pestaña "Audits" donde mirarás una pantalla como esta:
 
 ![Lighthouse audit start](./lighthouse-audit.png)
 
@@ -60,7 +60,7 @@ Ahora ejecutarás tus primeras pruebas con Lighthouse.
 
 ![Lighthouse audit results](./lighthouse-audit-results.png)
 
-Como ves, el desempeño de Gatsby es excelente sin configuraciones previas, pero aún faltan algunas cosas para que sea PWA, accesibilidad, mejores practicas y SEO que mejorará tus resultados en búsquedas web (en el proceso haz tu sitio web mucho mas amigable para los visitantes y motores de búsqueda)
+Como puedes observar, el desempeño de Gatsby es excelente sin configuraciones previas, pero aún falta hacer algunas configuraciones para que el sitio web sea una PWA como accesibilidad, mejores practicas y SEO que mejorarán tus calificaciones (en el proceso haz tu sitio web mucho más amigable para los visitantes y motores de búsqueda).
 
 ## Agrega el archivo manifiesto
 
@@ -87,7 +87,7 @@ El [plugin Gatsby's manifest](/packages/gatsby-plugin-manifest/) configura Gatsb
 npm install --save gatsby-plugin-manifest
 ```
 
-2. Agrega un favicon para tu aplicación en `src/images/icon.png`. Para este tutorial puedes usar este [icono de ejemplo](https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/tutorial/part-eight/icon.png), no debes disponer de uno. El icono es necesario para crear todas las imágenes para el manifiesto. Para mas información, mira los docs [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
+2. Agrega un favicon para tu aplicación en `src/images/icon.png`. Para este tutorial puedes usar este [icono de ejemplo](https://raw.githubusercontent.com/gatsbyjs/gatsby/master/docs/tutorial/part-eight/icon.png), no debes disponer de uno. El icono es necesario para crear todas las imágenes del manifiesto. Para más información, mira la documentación [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
 
 3. Agrega el plugin al arreglo `plugins` en tu archivo `gatsby-config.js`.
 
@@ -102,7 +102,7 @@ npm install --save gatsby-plugin-manifest
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
-        // Muestra mensaje "Agregar a escritorio" y deshabilita la UI del navegador (incluido el botón "atrás")
+        // Muestra el mensaje "Agregar a escritorio" y deshabilita la UI del navegador (incluido el botón "atrás")
         // ve https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
         icon: `src/images/icon.png`, // Esta ruta es relativa a la raíz de el sitio web.
@@ -112,11 +112,11 @@ npm install --save gatsby-plugin-manifest
 }
 ```
 
-Es todo lo que necesitas para iniciar a agregar un manifiesto a tu sitio web Gatsby. El ejemplo dado refleja una configuración base -- mira la [referencia de plugin](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) para mas opciones.
+Es todo lo que necesitas para empezar a agregar un manifiesto a tu sitio web Gatsby. El ejemplo dado refleja una configuración base -- mira la [referencia de plugin](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode) para más opciones.
 
 ## Agrega soporte sin conexión
 
-Otro requerimiento para que un sitio web califique como PWA es el uso de un [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). un "service worker" se ejecuta en el fondo de atrás, decidiendo si ofrece el contenido en línea o lo almacenado en cache, basándose en la conectividad actual, permitiendo una agradable experiencia sin conexión.
+Otro requerimiento para que un sitio web califique como PWA es el uso de un [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Un "service worker" se ejecuta en segundo plano, decidiendo si ofrece recursos en línea o almacenados en la cache del navegador dependiendo del estado de conexión, permitiendo una experiencia agradable sin ella.
 
 El [plugin Gatsby's offline](/packages/gatsby-plugin-offline/) hace que el sitio web Gatsby funcione sin conexión y sea mas resistente a malas condiciones de red, creando un "service worker" para tu sitio web.
 
@@ -129,7 +129,7 @@ El [plugin Gatsby's offline](/packages/gatsby-plugin-offline/) hace que el sitio
 npm install --save gatsby-plugin-offline
 ```
 
-2.  Agrega el plugin al arreglo `plugins` en tu archivo `gatsby-config.js`.
+2.  Agrega el plugin al listado de `plugins` en el archivo `gatsby-config.js`.
 
 ```javascript:title=gatsby-config.js
 {
@@ -142,7 +142,7 @@ npm install --save gatsby-plugin-offline
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
-        // Muestra mensaje "Agregar a escritorio" y deshabilita la UI del navegador (incluido el botón "atrás")
+        // Muestra el mensaje "Agregar a escritorio" y deshabilita la UI del navegador (incluido el botón "atrás")
         // ve https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
         icon: `src/images/icon.png`, // Esta ruta es relativa a la raíz de el sitio web.
@@ -156,15 +156,15 @@ npm install --save gatsby-plugin-offline
 
 Es todo lo que necesitas para iniciar con "service workers" en Gatsby.
 
-> 💡 El plugin sin conexión (offline plugin) lo deberás listar _después_ del plugin manifiesto (manifest plugin), para que el plugin sin conexión pueda guardar en cache el archivo creado `manifest.webmanifest`.
+> 💡 El plugin sin conexión (offline plugin) lo deberás listar _después_ del plugin manifiesto (manifest plugin), para que el plugin sin conexión pueda guardar en la cache del navegador el archivo creado `manifest.webmanifest`.
 
-## Agregar metadata a la página
+## Agregar metadatos a la página
 
-Agregar metadata a las páginas (como un título o descripción) es prioritario para ayudar a los motores de búsqueda como Google para entender tu contenido y decidir cuando mostrarte en sus resultados de búsqueda.
+Agregar metadatos a las páginas (como un título o descripción) es clave para ayudar aa motores de búsqueda como Google a entender tu contenido y decidir cuando mostrarte en sus resultados de búsqueda.
 
 [React Helmet](https://github.com/nfl/react-helmet) es un paquete que provee a React componentes de interfaz para ti, para administrar tu [documento cabecera](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
 
-El plugin de Gatsby [react helmet](/packages/gatsby-plugin-react-helmet/) provee soporte a servidores, creando representaciones de datos agregados con React Helmet. Usando el plugin, los atributos agregados a React Helmet serán agregados a las páginas HTML que Gatsby compile.
+El plugin [gatsby-plugin-react-helmet](/packages/gatsby-plugin-react-helmet/) soporta renderizado en el servidor de toda la información agregada con React Helmet. Usando el plugin, los atributos agregados a React Helmet serán agregados a las páginas HTML que Gatsby compile.
 
 ### ✋ Usando `React Helmet` y `gatsby-plugin-react-helmet`
 
@@ -174,7 +174,7 @@ El plugin de Gatsby [react helmet](/packages/gatsby-plugin-react-helmet/) provee
 npm install --save gatsby-plugin-react-helmet react-helmet
 ```
 
-2.  Agrega el plugin al arreglo `plugins` en tu archivo `gatsby-config.js`.
+2.  Agrega el plugin al listado de `plugins` en el archivo `gatsby-config.js`.
 
 ```javascript:title=gatsby-config.js
 {
@@ -187,7 +187,7 @@ npm install --save gatsby-plugin-react-helmet react-helmet
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
-        // Muestra mensaje "Agregar a escritorio" y deshabilita la UI del navegador (incluido el botón "atrás")
+        // Muestra el mensaje "Agregar a escritorio" y deshabilita la UI del navegador (incluido el botón "atrás")
         // ve https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
         icon: `src/images/icon.png`, // Esta ruta es relativa a la raíz de el sitio web.
@@ -224,11 +224,11 @@ class Application extends React.Component {
 }
 ```
 
-> 💡 El ejemplo anterior es de los [docs de React Helmet](https://github.com/nfl/react-helmet#example). ¡Revísalos para más información!
+> 💡 El ejemplo anterior es de la [documentación de React Helmet](https://github.com/nfl/react-helmet#example). ¡Revísalos para más información!
 
 ## Sigue haciéndolo mejor
 
-En esta sección te hemos mostrado algunas herramientas especificas de Gatsby para mejorar el desempeño de tu sitio web y prepararlo para montarlo en línea.
+En esta sección te hemos mostrado algunas herramientas especificas de Gatsby para mejorar el desempeño de tu sitio web y prepararlo para subirlo a producción.
 
 Lighthouse es una herramienta estupenda para hacer mejoras a tu sitio y aprender -- ¡continua revisando los resultados detallados que te provee y sigue haciendo tu sitio web mejor!
 

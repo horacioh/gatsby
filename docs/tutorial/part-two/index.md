@@ -22,9 +22,9 @@ En esta parte, explorarás opciones para estilizar páginas web de Gatsby y a la
 
 ## Usando estilos globales
 
-Cada sitio web tiene cierto estilo global. Esto incluye cosas como la tipografía y los colores de fondo. Estos estilos definen la vista general del sitio - asi como el color y las texturas de una pared definen la vista general de una habitación.
+Cada sitio web tiene algún tipo de estilo global. Esto incluye cosas como la tipografía y los colores de fondo. Estos estilos definen la vista general del sitio - así como el color y las texturas de una pared definen la vista general de una habitación.
 
-### Creando estilos globales con archivos CSS normales
+### Creando estilos globales con archivos CSS básicos
 
 Una de las maneras más directas de agregar estilos globales a un sitio web es usando una hoja de estilos global `.css`
 
@@ -48,7 +48,7 @@ Ahora tienes un nuevo sitio web Gatsby (basado en el inicializador Gatsby "hola 
 │       └── index.js
 ```
 
-#### ✋ Agrega estilos aun archivo css
+#### ✋ Agrega estilos a un archivo css
 
 1. Crea un archivo `.css` en tu proyecto nuevo:
 
@@ -59,7 +59,7 @@ cd styles
 touch global.css
 ```
 
-> Nota: siéntete libre de crear estos directorios y archivos usando tu editor de código, si así lo prefieres.
+> Nota: puedes crear éstos directorios y archivos usando tu editor de código, si así lo prefieres.
 
 Ahora deberías tener una estructura como esta:
 
@@ -103,7 +103,7 @@ La estructura de tu proyecto ahora debería verse así:
 ├── gatsby-browser.js
 ```
 
-> 💡 ¿Que es `gatsby-browser.js`? No te preocupes demasiado de eso ahora - por el momento, toma en cuenta que `gatsby-browser.js` es uno de los archivos especiales de más ayuda que Gatsby busca y utiliza (si es que existe). Aquí, el nombre de el archivo **es** importante. Si quieres saber más, revisa [los docs](/docs/browser-apis/).
+> 💡 ¿Que es `gatsby-browser.js`? No te preocupes demasiado de eso ahora - por ahora, ten en cuenta que `gatsby-browser.js` es uno de los pocos archivos especiales que Gatsby busca y utiliza (si existen). Aquí, el nombre de el archivo **es** importante. Si quieres saber más, revisa [la documentación](/docs/browser-apis/).
 
 2. Importa tu hoja de estilo recientemente creada en `gatsby-browser.js`:
 
