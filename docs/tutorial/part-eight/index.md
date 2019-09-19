@@ -256,7 +256,7 @@ Esto es solo el inicio. ¡Sigue adelante!
 
 - ¿Construiste algo genial? Compártelo en Twitter, con el tag [#buildwithgatsby](https://twitter.com/search?q=%23buildwithgatsby), y [@mencionanos](https://twitter.com/gatsbyjs)!
 - ¿Escribiste algún post genial acerca de lo que haz aprendido? ¡Compártelo también!
-- ¡Contribuye! Paseate por los [issues abiertos](https://github.com/gatsbyjs/gatsby/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) en el repo de gatsby y [vuélvete contribuidor](/contributing/how-to-contribute/).
+- ¡Colabora! Paseate por los [issues abiertos](https://github.com/gatsbyjs/gatsby/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) en el repo de gatsby y [vuélvete colaborador](/contributing/how-to-contribute/).
 
 Revisa los docs de ["como contribuir"](/contributing/how-to-contribute/) para mas ideas.
 
