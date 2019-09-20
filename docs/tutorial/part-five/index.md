@@ -8,7 +8,7 @@ disableTableOfContents: true
 
 ## ¿Qué abarca este tutorial?
 
-En este tutorial aprenderás como jalar datos a tu sitio de Gatsby usando GraphQL y plugins de fuentes de datos. Sin embargo, antes de aprender acerca de estos plugins, será bueno saber cómo usar algo llamado GraphiQL, una herramienta que te ayuda a estructurar tus consultas de manera correcta.
+En este tutorial aprenderás como consumir datos a tu sitio de Gatsby usando GraphQL y plugins de fuentes de datos. Sin embargo, antes de aprender acerca de estos plugins, será bueno saber cómo usar algo llamado GraphiQL, una herramienta que te ayuda a estructurar tus consultas de manera correcta.
 
 ## Presentando GraphiQL
 
